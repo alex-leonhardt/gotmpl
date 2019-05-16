@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/nextrevision/gotmpl/cmd"
+	"github.com/alex-leonhardt/gotmpl/cmd"
 )
 
 func main() {
