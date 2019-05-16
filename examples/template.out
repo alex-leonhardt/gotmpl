@@ -3,3 +3,8 @@ Static value
 # Key1
 value1
 # Encrypted Key
+<no value>
+# Inline Encryped Key
+encInline
+# Env Var
+/bin/zsh

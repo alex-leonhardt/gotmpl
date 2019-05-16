@@ -26,13 +26,3 @@ func TestConvertTemplateNoFile(t *testing.T) {
 		t.Fatal("ConvertTemplate should fail when missing template file")
 	}
 }
-
-func TestConvertTemplateMissingVars(t *testing.T) {
-	vars := make(map[string]interface{})
-	vars["key1"] = "value1"
-
-	err := ConvertTemplate(templateFile, vars, outFile, password)
-	if err == nil {
-		t.Fatal("ConvertTemplate should fail when missing template file")
-	}
-}
