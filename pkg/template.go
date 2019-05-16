@@ -22,8 +22,8 @@ func ConvertTemplate(templatefile string, vars map[string]interface{}, outfile s
 	if err != nil {
 		return err
 	}
-
-	tpl, err := template.New(templatefile).Option("missingkey=error").Funcs(funcMap).Parse(string(templateText))
+	// removed .Option("missingkey=error")
+	tpl, err := template.New(templatefile).Funcs(funcMap).Parse(string(templateText))
 	if err != nil {
 		return fmt.Errorf("Error parsing template(s): %v", err)
 	}
