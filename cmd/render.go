@@ -3,7 +3,7 @@ package cmd
 import (
 	"fmt"
 
-	"github.com/nextrevision/gotmpl/pkg"
+	"github.com/alex-leonhardt/gotmpl/pkg"
 	"github.com/spf13/cobra"
 )
 
